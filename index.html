@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>TSUBASA SO PORTFOLIO</title>
+<meta name="description" content="フリーランスのWebデザイナーTSUBASA SO ののポートフォリオサイトです。">
+<meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <header>
+    <!-- ロゴ 
+        <a href="index.html" id="img-logo"><img src="images/logo.png"  alt="トップページに戻る">
+         </a>-->
+    <!-- PC用ナビゲーション -->
+         <nav id="nav-pc">
+          <a href="index.html#works" style="opacity: 1;">WORKS</a>
+          <a href="index.html#concept" style="opacity: 1;">CONCEPT</a>
+          <a href="index.html#profile" style="opacity: 1;">PROFILE</a>
+        </nav>
+        <!-- SP 用ナビゲーション-->
+        <div class="drawer">
+          <input type="checkbox" id="drawer-check" class="drawer-hidden" >
+          <label for="drawer-check" class="drawer-open"><span></span></label>
+      <!--ここからメニュー-->
+      <nav class="drawer-content">
+        <ul class="drawer-list">
+          <li class="drawer-item">
+            <a href="">WORKS</a>
+          </li><!-- /.drawer-item -->
+          <li class="drawer-item">
+            <a href="">CONCEPT</a>
+          </li><!-- /.drawer-item -->
+          <li class="drawer-item">
+            <a href="">PROFILE</a>
+          </li><!-- /.drawer-item -->
+          <li class="drawer-item">
+            <a href="">CONTACT</a>
+          </li><!-- /.drawer-item -->
+        </ul><!-- /.drawer-list -->
+      </nav>
+    </div>
+  </header>
+  <main>
+    <!-- メインビジュアル -->
+    <div id="main-visual">
+      <h1>
+        <img src="images/main_visual.png" alt="ロゴ">
+      </h1>
+     </div> 
+     <!-- 作品 -->
+      <section id="works">
+        <div class="works">
+          <a class="sample" href="#">
+            <img src="images/sample1.png" width="280" height="200" alt="作品1">
+          </a>
+        </div>
+        <div class="works">
+          <a class="sample" href="#">
+            <img src="images/sample2.png" width="280" height="200" alt="作品2">
+          </a>
+        </div>
+        <div class="works">
+          <a class="sample" href="#">
+            <img src="images/sample3.png" width="280" height="200" alt="作品3">
+          </a>
+        </div>
+       </section>
+       <!-- コンセプト -->
+       <section id="concept">
+        <p class="text">はじめまして！蘇翼です。台湾出身、フリーランス（個人事業主）で活動している大阪市在住のグラフィックデザイナーです。主に紙面デザイン全般（チラシ・ポスター・パンフレットなど）を扱っています。紙面デザイン以外にもWEBデザインやイラスト（ゆるキャラ・似顔絵など）も行っています。様々な思いをカタチにすることを手伝い致します。</p>
+       </section>
+
+       <!-- プロフィール -->
+       <section id="profile">
+        <div>
+        <img id="photo" src="images/photo.png" width="30%" alt="顔写真">
+        <p class="text">蘇 翼 (Tsubasa So)<br>
+          11月12日生まれ。<br>
+          台湾高雄市出身。大阪府大阪市在住。<br>
+          神戸電子専門学校グラフィックデザイン学科卒。</p>
+        </div>
+       </section>
+      </main>
+      <!-- フッター -->
+  <footer id="footer">
+  <ul class="sns-navi">
+  <li><a href="#"><img class="sns-img" src="images/facebook.png" alt="facebook"></a></li>
+  <li><a href="#"><img class="sns-img" src="images/email.png" alt="e-mail"></a></li>
+</ul>
+<p class="copyright">Copyright TSUBSA SO All rights reserved.</p>
+
+</footer>
+
+<script> 
+$(function() {
+  $('.drawer-item>a').click(function() {
+    $('#drawer-check').removeAttr('checked').prop('checked', false).change();
+  });
+});
+</script>
+
+</body>
+
+</html>
